@@ -1,7 +1,7 @@
 
 ## Detailed API documentation
 
-https://api.tileboard.ca/v1.0
+https://developer.tileboard.ca/docs/v1.0/
 
 ## General information
 
@@ -18,7 +18,7 @@ Authentication is done through a bearer token added to the `Authorization` reque
 
 For example, using `curl` to get a list of products: 
     
-    curl -X GET --header 'Authorization: Bearer MYTOKEN' 'https://api.pub.worximity.net/products'                    
+    curl -X POST --header 'Authorization: Bearer MYTOKEN' 'https://api.pub.worximity.net/products/batch'                    
 
 
 All requests should include the header and token.
@@ -34,7 +34,7 @@ Requests should include a user agent header. This allows us to contact you if th
 
 For example:
 
-    curl --header 'User-Agent: Worximity-ProductAPIConsumer' --header 'Authorization: Bearer MYTOKEN' https://api.pub.worximity.net/products
+    curl -X POST --header 'User-Agent: Worximity-ProductAPIConsumer' --header 'Authorization: Bearer MYTOKEN' https://api.pub.worximity.net/products/batch
 
 ## Status Codes
 
