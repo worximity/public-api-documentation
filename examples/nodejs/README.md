@@ -22,8 +22,6 @@ Running the test should display something like the following:
 > mocha --opts mocha.opts
 
   The products API fetcher
-    ✓ should retreive a list of all products
-    ✓ should delete products
     ✓ should save products
 
   3 passing (14ms)

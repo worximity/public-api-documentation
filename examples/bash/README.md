@@ -19,23 +19,37 @@ $ curl -d @myfilename -H "Authorization: Bearer $WXTOKEN" -H "Content-Type: appl
 
 Where `myfilename` points to a file that contains information to POST. For example, for products:
 ```
-[
-    {
-        "code": "A1230",
-        "description": "Raspberries 450g",
-        "line_id": "1A",
-        "category_name": "Vrac",
-        "exclude_data": true,
-        "output_multiplier": 3
-    },
-    {
-        "code": "A1231",
-        "description": "Strawberry 450g",
-        "line_id": "1A",
-        "category_name": "Vrac",
-        "exclude_data": false,
-        "output_multiplier": 4
-    }
-]
+{
+    "data": [{
+            "sku": "A1230",
+            "description": "Strawberry 450g",
+            "production_unit_id": "1A",
+            "category_name": "Vrac",
+            "exclude": true,
+            "output_multiplier": 4,
+            "tooling_kit": "string",
+            "objectives": [{
+                "type": "SPEED",
+                "value": 150,
+                "start_date": "2018-01-01"
+            }]
+        },
+        {
+            "sku": "A1231",
+            "description": "Strawberry 900g",
+            "production_unit_id": "1A",
+            "category_name": "Vrac",
+            "exclude": false,
+            "output_multiplier": 2,
+            "tooling_kit": "string",
+            "objectives": [{
+                "type": "SPEED",
+                "value": 150,
+                "start_date": "2018-01-01"
+            }]
+        }
+    ],
+    "mode": "APPEND"
+};
 ```
 
