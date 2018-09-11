@@ -36,7 +36,7 @@ describe("The products API fetcher", () => {
 
 const ProductList = {
     "data": [{
-            "sku": "A1230",
+            "code": "A1230",
             "description": "Strawberry 450g",
             "production_unit_id": "1A",
             "category_name": "Vrac",
@@ -50,7 +50,7 @@ const ProductList = {
             }]
         },
         {
-            "sku": "A1231",
+            "code": "A1231",
             "description": "Strawberry 900g",
             "production_unit_id": "1A",
             "category_name": "Vrac",
