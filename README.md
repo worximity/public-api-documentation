@@ -51,8 +51,8 @@ Error codes:
 
 ## Usage examples
 
-* [NodeJS](examples/nodejs)
-* [Bash](examples/bash)
+* [NodeJS](examples/1.0/nodejs)
+* [Bash](examples/1.0/bash)
     
 
 

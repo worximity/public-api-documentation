@@ -6,7 +6,7 @@ Follows are examples showing how to use Worximity APIs through bash.
 
 ```
 $ export WXTOKEN=insert_token_here
-$ curl -H "Authorization: Bearer $WXTOKEN" -H "Content-Type: application/json" https://api.pub.worxity.net/products
+$ curl -H "Authorization: Bearer $WXTOKEN" -H "Content-Type: application/json" https://api.pub.worximity.net/products
 ```
 
 
@@ -14,7 +14,7 @@ $ curl -H "Authorization: Bearer $WXTOKEN" -H "Content-Type: application/json" h
 
 ```
 $ export WXTOKEN=insert_token_here
-$ curl -d @myfilename -H "Authorization: Bearer $WXTOKEN" -H "Content-Type: application/json" https://api.pub.worxity.net/products
+$ curl -d @myfilename -H "Authorization: Bearer $WXTOKEN" -H "Content-Type: application/json" https://api.pub.worximity.net/products
 ```
 
 Where `myfilename` points to a file that contains information to POST. For example, for products:
