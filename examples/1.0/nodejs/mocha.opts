@@ -1,1 +1,2 @@
 products/*.test.js
+context/*.test.js
