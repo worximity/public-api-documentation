@@ -45,7 +45,7 @@ generateContext()
 {
     "contexts": [{
         "production_unit_id": "pu-3asdas-1b324a75",
-        "sku": null,
+        "sku": "",
         "datetime": "2018-12-05T12:59:40.123Z"
     }],
     "originate_datetime": "$current_time"

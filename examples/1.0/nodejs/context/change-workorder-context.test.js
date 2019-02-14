@@ -45,14 +45,14 @@ describe("The Work Order Context API", () => {
         let assertions = function (result) {
             let request = fetchMock.lastOptions('https://api.pub.worximity.net/v1.0/contexts');
             expect(request.body.contexts[0].production_unit_id).to.equal("pu-3asdas-1b324a75");
-            expect(request.body.contexts[0].work_order).to.be.null;
+            expect(request.body.contexts[0].work_order).to.equal("");
             expect(request.body.contexts[0].datetime).to.equal("2018-12-05T13:59:40.123Z");
         }
 
         let productChange = {
             "contexts": [{
                 "production_unit_id": "pu-3asdas-1b324a75",
-                "work_order": null,
+                "work_order": "",
                 "datetime": "2018-12-05T13:59:40.123Z"
             }]
         }
@@ -96,16 +96,16 @@ describe("The Work Order Context API", () => {
         let assertions = function (result) {
             let request = fetchMock.lastOptions('https://api.pub.worximity.net/v1.0/contexts');
             expect(request.body.contexts[0].production_unit_id).to.equal("pu-3asdas-1b324a75");
-            expect(request.body.contexts[0].work_order).to.be.null;
-            expect(request.body.contexts[0].sku).to.be.null;
+            expect(request.body.contexts[0].work_order).to.equal("");
+            expect(request.body.contexts[0].sku).to.equal("");
             expect(request.body.contexts[0].datetime).to.equal("2018-12-05T13:59:40.123Z");
         }
 
         let productChange = {
             "contexts": [{
                 "production_unit_id": "pu-3asdas-1b324a75",
-                "work_order": null,
-                "sku": null,
+                "work_order": "",
+                "sku": "",
                 "datetime": "2018-12-05T13:59:40.123Z"
             }]
         }
@@ -143,8 +143,8 @@ describe("The Work Order Context API", () => {
         let assertions = function (result) {
             let request = fetchMock.lastOptions('https://api.pub.worximity.net/v1.0/contexts');
             expect(request.body.contexts[0].production_unit_id).to.equal("pu-3asdas-1b324a75");
-            expect(request.body.contexts[0].work_order).to.be.null;
-            expect(request.body.contexts[0].sku).to.be.null;
+            expect(request.body.contexts[0].work_order).to.equal("");
+            expect(request.body.contexts[0].sku).to.equal("");
             expect(request.body.contexts[0].datetime).to.equal("2018-12-05T13:59:40.123Z");
         }
 
@@ -152,8 +152,8 @@ describe("The Work Order Context API", () => {
         let productChange = {
             "contexts": [{
                 "production_unit_id": "pu-3asdas-1b324a75",
-                "work_order": null,
-                "sku": null,
+                "work_order": "",
+                "sku": "",
                 "datetime": "2018-12-05T13:59:40.123Z"
             }]
         }

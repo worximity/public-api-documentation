@@ -73,7 +73,7 @@ describe("The Context API", () => {
                 },
                 {
                     "production_unit_id": "pu-3asdas-1b324a75",
-                    "sku": null,
+                    "sku": "",
                     "datetime": "2018-12-05T12:59:40.123Z"
                 }],
                 "originate_datetime": "2018-12-05T13:00:00.000Z"
@@ -88,7 +88,7 @@ describe("The Context API", () => {
             },
             {
                 "production_unit_id": "pu-3asdas-1b324a75",
-                "sku": null,
+                "sku": "",
                 "datetime": "2018-12-05T12:59:40.123Z"
             }]
         }
