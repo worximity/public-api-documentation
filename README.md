@@ -7,7 +7,7 @@ https://developer.tileboard.ca/docs/v1.0/
 
 * All API operations are made over `https` on the `api.pub.worximiy.net` domain. 
 * Data is sent and received as JSON. 
-* All dates and times are in ISO8601 format.  Timezone information should always be included.
+* All dates and times are in UTC and ISO8601 format
 * If applicable, rate limiting information is returned in the `X-RateLimit-Limit` and `X-RateLimit-Remaining` response headers.
 * [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) headers are used and should be leveraged if possible.
 
